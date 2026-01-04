@@ -21,15 +21,24 @@ export default function Header() {
           width: "100%",
           maxWidth: "1220px",
           display: "flex",
+          justifyContent: "space-between",
           gap: "50px",
           alignItems: "center",
         }}
       >
-        <img src={logo} style={{ width: "130px" }} />
-        <CustomInput
-          icon={<Search color={COLORS.gray} size={20} />}
-          placeholder="Search"
-        />
+        <div
+          style={{
+            display: "flex",
+            gap: "60px",
+            alignItems: "center",
+          }}
+        >
+          <img src={logo} style={{ width: "130px" }} />
+          <CustomInput
+            icon={<Search color={COLORS.gray} size={20} />}
+            placeholder="Search"
+          />
+        </div>
 
         <Menu />
       </div>

@@ -4,4 +4,5 @@ export const COLORS = {
   dark: "#2c2c2c",
   white: "#fff",
   gray: "#9f9f9f",
+  card: "#1d1d1d",
 };

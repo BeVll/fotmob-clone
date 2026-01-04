@@ -8,7 +8,10 @@ interface LinkProps {
 
 export default function Link(props: LinkProps) {
   return (
-    <a href={props.url} style={{ color: COLORS.white, textDecoration: "none" }}>
+    <a
+      href={props.url}
+      style={{ color: COLORS.white, textDecoration: "none", fontWeight: 700 }}
+    >
       {props.text}
     </a>
   );

@@ -1,0 +1,5 @@
+.hoverableItem:hover {
+  background-color: #2c2c2c;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
