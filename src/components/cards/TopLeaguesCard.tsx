@@ -25,8 +25,9 @@ export default function TopLeaguesCard() {
   return (
     <CardContainer title="Top leagues">
       <div style={{ display: "flex", flexDirection: "column" }}>
-        {allLeagues?.popular.map((item) => (
+        {allLeagues?.popular.map((item, index) => (
           <div
+            key={`league-${index}`}
             className="hoverableItem"
             style={{
               padding: "16px 24px",

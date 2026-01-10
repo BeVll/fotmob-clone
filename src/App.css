@@ -3,3 +3,7 @@
   transition: background-color 0.2s;
   cursor: pointer;
 }
+
+.linkUnderlined:hover {
+  text-decoration: underline;
+}

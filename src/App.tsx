@@ -1,4 +1,5 @@
 import "./App.css";
+import NewsCard from "./components/cards/NewsCard";
 import TopLeaguesCard from "./components/cards/TopLeaguesCard";
 import Header from "./components/Header";
 import { COLORS } from "./theme/colors";
@@ -31,7 +32,9 @@ function App() {
           <TopLeaguesCard />
         </div>
         <div className="middleContent" style={{ width: "100%" }}></div>
-        <div className="rightContent" style={{ width: "100%" }}></div>
+        <div className="rightContent" style={{ width: "100%" }}>
+          <NewsCard />
+        </div>
       </div>
     </div>
   );
