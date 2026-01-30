@@ -3,8 +3,11 @@ import logo from "../assets/icons/logo.svg";
 import CustomInput from "./ui/CustomInput";
 import { Search } from "lucide-react";
 import Menu from "./menu/Menu";
+import { useNavigate } from "react-router";
 
 export default function Header() {
+  const navigate = useNavigate();
+
   return (
     <div
       style={{
@@ -33,7 +36,13 @@ export default function Header() {
             alignItems: "center",
           }}
         >
-          <img src={logo} style={{ width: "130px" }} />
+          <img
+            onClick={() => {
+              navigate("/");
+            }}
+            src={logo}
+            style={{ width: "130px" }}
+          />
           <CustomInput
             icon={<Search color={COLORS.gray} size={20} />}
             placeholder="Search"
